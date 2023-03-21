@@ -11,18 +11,18 @@ const AppMesa13 = () => {
 
   return (
     <div className="App">
-       {toggle ?
+       {/* {toggle ?
             <ClassComponent titulo='Soy el componente de CLASE'/>
             :
             <FuncComponent titulo='Soy el componente de FUNCION'/>
         }
         <button onClick={() => setToggle(!toggle)}>
             Cambiar a componente de {toggle ? 'funcion' : 'clase' }
-        </button>
+        </button> */}
 
-        {/* <p>**************************************************************************************************</p>
+        <p>**************************************************************************************************</p>
         <h2>Mesas de trabajo clase 13: </h2>
-        <Mesa13/> */}
+        <Mesa13/>
     </div>
   )
 

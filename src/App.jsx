@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import AppMesa13 from './components/13clase/AppMesa13'
-import ClassComponent from './components/13clase/ClassComponent'
-import FuncComponent from './components/13clase/FuncComponent'
-
+import AppClase14 from './components/14clase/AppClase14'
+import AppFood from './components/food-recipies/AppFood'
 function App() {
 
   return (
     <div className="App">
-
-      <AppMesa13/>
+      {/* <AppMesa13/> */}
+      {/* <AppClase14/> */}
+      <AppFood/>
     </div>
   )
 }

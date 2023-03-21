@@ -16,6 +16,11 @@ const Home = () => {
     //El endpoint como tal jsonificado (data) me da un objeto(data) q tiene arrays(recipes), yo lo inicialicé con un array vacío pero es un objeto q tiene arrays,
     //por lo cual debo desestructurarlo. Vemos con console.log la data, entonces vemos q si tomamos data.recipes tenemos el array.
     }, [])
+    /* 1° Dependencias ARRAY VACIO: useEffect() se ejecuta UNA SOLA VEZ
+       2° Si coloco alguna dependencia, o sea le pongo algo al array, useEffect() se ejecutará cada vez que se actualice eso q ponga, por ejemplo:
+     Si en las dependencias pongo otro estado, por ej un contador, se actualizará cada vez q ese contador se actualice.
+     OJO! Si en las dependencias pongo recipies se va a generar un loop infinito.
+     */
 
     console.log(recipes);
 

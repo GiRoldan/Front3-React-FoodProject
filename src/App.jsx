@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import LoginForm from './components/LoginForm'
 import Navbar from './components/Navbar'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
@@ -16,6 +17,7 @@ function App() {
   //Generalmente se colocan solo RUTAS y a lo sumo alguna operación lógica para trabajar con las rutas.
   return (
     <div className="App">
+      <LoginForm/>
       <Navbar/>
       <h1>Recetario DH</h1>
       <Routes>

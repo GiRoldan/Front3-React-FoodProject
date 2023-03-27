@@ -52,14 +52,14 @@ function App() {
         {/* Ahora Home no es tanto un componente sino una pag donde dentro de Home podrian haber otros componentes,
         por cual me conviene crear una carpeta nueva de PAGES, dentro de la cual pondremos a Home*/}
         <Route path={routes.home} element={<Home/>}>
-          <Route path="/vegetarianas" element={<Vegetarians/>}>
+          <Route path={routes.vegetarians} element={<Vegetarians/>}>
              <Route path="/vegetarianas/veggie" element={<Veggie/>}/>
           </Route>
-          <Route path="/postres" element={<Deserts/>}/>
+          <Route path={routes.deserts} element={<Deserts/>}/>
         </Route>
         <Route path={routes.ingredients} element={<Ingredients/>}/>
         <Route path={routes.recipes} element={<Recipes recipes={recipes}/>}/>
-        <Route path='/recipe/:id' element={<RecipeDetail recipes={recipes}/>}/>
+        <Route path={routes.recipe} element={<RecipeDetail recipes={recipes}/>}/>
         <Route path={routes.contact} element={<Contact/>}/>
         <Route path={routes.about} element={<About/>}/>
         <Route path='*' element={<NotFound/>}/>

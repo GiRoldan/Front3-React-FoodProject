@@ -4,5 +4,7 @@ export const routes = {
     contact: '/contacto',
     about: '/acerca',
     recipes: '/recetas',
-    recipe: '/recipe/:id'
+    recipe: '/recipe/:id',
+    vegetarians: '/vegetarianas',
+    deserts: '/postres'
 }

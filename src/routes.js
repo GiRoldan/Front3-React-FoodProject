@@ -2,5 +2,7 @@ export const routes = {
     home: '/',
     ingredients: '/ingredientes',
     contact: '/contacto',
-    about: '/acerca'
+    about: '/acerca',
+    recipes: '/recetas',
+    recipe: '/recipe/:id'
 }
